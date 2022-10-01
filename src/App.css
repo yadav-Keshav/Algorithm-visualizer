@@ -1,0 +1,148 @@
+:root {
+  --primary-color: #1abc9c;
+  --secondary-color: #16a085;
+}
+
+* {
+  /* Below is the standard CSS code one should add to get rid of default margins and padding which most of tge HTML elements have */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  user-select: none;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+/* Title CSS */
+.title {
+  background-color: var(--primary-color);
+  text-align: center;
+  font-size: 1.2em;
+  padding-block: 0.5em;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Navbar CSS */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.8em;
+  font-size: 16px;
+  min-height: 70px;
+  padding-block: 0.6em;
+  background-color: var(--secondary-color);
+  transition: all 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.navbar a,
+.start {
+  all: unset;
+  cursor: pointer;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: 0.3s;
+  background-color: #1abc9c;
+}
+
+.navbar a:hover {
+  background-color: transparent;
+}
+
+.navbar #algo_menu,#speed_menu {
+  width: fit-content;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 8px;
+  background-color: #1abc9c;
+  color: white;
+}
+
+.navbar>.icon {
+  display: none;
+}
+
+#menu,
+#random,
+#start {
+  cursor: pointer;
+}
+
+.arrayInput {
+  width: 600px;
+  display: flex;
+  margin: auto;
+  margin-top: 12px;
+  align-items: center;
+  justify-content: center;
+  gap: 30px
+}
+
+.arrayInput input {
+  width: 80%;
+  outline: none;
+  font-size: 20px;
+  padding: 5px;
+}
+
+.arrayInput button {
+  width: 15%;
+  font-size: 20px;
+  padding: 5px;
+  background-color: #16a085;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+.error{
+  color: red;
+  width: 200px;
+  align-items: center;
+  text-align: center;
+}
+
+#array {
+  /* background-color: rgb(235, 231, 231); */
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  height: 400px;
+  width: 600px;
+  margin: auto;
+  display: flex;
+  gap: 40px;
+  position: relative;
+  margin-top: 14px;
+}
+
+.block {
+  max-height: 400px;
+  width: 28px;
+  background-color: #6b5b95;
+  position: absolute;
+  bottom: 0px;
+  vertical-align: bottom;
+  color: #fff;
+  transition: 0.2s all ease;
+}
+
+.block_id {
+  position: absolute;
+  color: black;
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+}
