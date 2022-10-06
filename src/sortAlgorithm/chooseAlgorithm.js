@@ -8,7 +8,6 @@ import selectionSort from "./selectionSort";
 export default async function chooseAlgorithm() {
     const algo = Number(document.getElementById('algo_menu').value);
     const delay = Number(document.getElementById('speed_menu').value);
-    alert(delay)
     switch (algo) {
         case 1:
             await bubbleSort(delay);
